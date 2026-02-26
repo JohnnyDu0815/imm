@@ -27,4 +27,4 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 
 #sed -i '1i src-git openclash https://github.com/vernesong/openclash' feeds.conf.default
 
-git_sparse_clone luci https://github.com/chenmozhijin/turboacc luci-app-turboacc
+git clone https://github.com/chenmozhijin/turboacc package/luci-app-turboacc
