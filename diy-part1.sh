@@ -23,6 +23,6 @@
 
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 
-echo 'src-git JohnnyDu0815 https://github.com/JohnnyDu0815/small-package' >>feeds.conf.default
+echo 'src-git JohnnyDu0815 https://github.com/JohnnyDu0815/litte' >>feeds.conf.default
 
 #sed -i '1i src-git openclash https://github.com/vernesong/openclash' feeds.conf.default
