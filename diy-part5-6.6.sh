@@ -37,3 +37,5 @@ config rule
         option proto 'udp'
         option target 'ACCEPT'
 EOF
+
+rm -rf dl/rust*
