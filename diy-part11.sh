@@ -28,4 +28,5 @@
 #sed -i '1i src-git openclash https://github.com/vernesong/openclash' feeds.conf.default
 
 # 在 diy-part11.sh 里替换为：
-git clone --depth=1 https://github.com/mufeng05/turboacc package/luci-app-turboacc
+
+git clone https://github.com/mufeng05/turboacc package/luci-app-turboacc
