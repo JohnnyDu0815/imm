@@ -39,17 +39,5 @@ config rule
         option target 'ACCEPT'
 EOF
 
-# Fix rust host build (failed to download llvm from ci)
-if [ -d feeds/packages/lang/rust ]; then
-  mkdir -p feeds/packages/lang/rust/patches
-  cat > feeds/packages/lang/rust/patches/900-disable-ci-llvm.patch << 'EOF'
---- a/src/bootstrap/defaults/config.dist.toml
-+++ b/src/bootstrap/defaults/config.dist.toml
-@@ -1,3 +1,6 @@
-+[llvm]
-+download-ci-llvm = false
-+
- [build]
- download-rustc = false
- EOF
-fi
+# 强制禁用 rust 的 download-ci-llvm
+find feeds/packages/lang/rust -name "*.toml" -exec sed -i 's/download-ci-llvm.*/download-ci-llvm = false/' {} \; 2>/dev/null || true
