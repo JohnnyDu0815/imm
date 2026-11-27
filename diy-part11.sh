@@ -29,4 +29,4 @@
 
 # 在 diy-part11.sh 里替换为：
 
-git clone https://github.com/mufeng05/turboacc package/luci-app-turboacc
+#git clone https://github.com/mufeng05/turboacc package/luci-app-turboacc
